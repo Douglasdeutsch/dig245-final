@@ -6,6 +6,12 @@
   overflow: hidden;
   background-color: #D9D9D9;
 }
+
+.title{
+  width: 391px;
+  height:222px;
+  background-color: orange;
+}
 #adviewer{
   margin-top:10vh;
   width: 838px;
