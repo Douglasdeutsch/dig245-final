@@ -2,7 +2,7 @@
 /* javascript */
 
 
-const searchButton = document.getElementById('btn btn-primary');
+const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('form1');
 searchButton.addEventListener('click', () => {
   const inputValue = searchInput.value;
