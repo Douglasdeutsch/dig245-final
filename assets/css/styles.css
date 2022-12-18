@@ -246,6 +246,31 @@
   height:12%;
   font-size:1.07rem;
 }
+
+/*indexpage*/
+#brlogo{
+  unsure
+}
+#imgbr{
+  width:11rem;
+}
+.top-row{
+  margin-top:0rem;
+}
+.thmbn{
+  width:52%;
+  height:106px;
+}
+.title{
+  padding:0em;
+  width:91%;
+}
+#brsb{
+  width:103%;
+}
+.rowrslt{
+  margin: 33px 0px 14px 0px;
+}
 }
 
 @media(min-width:768px){
@@ -255,6 +280,32 @@
   }
   #skip-button{
     font-size:2.1rem;
+  }
+
+  /*resultspage*/
+  #brsb{
+    width:100%;
+  }
+  .thumbn{
+    width:40%;
+    height:215px;
+  }
+  .title{
+    padding: 1em;
+    width: 33%;
+    display: flex;
+    float: right;
+    margin: 0px;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2em;
+    color: black;
+  }
+  #brlogo{
+    padding-left:29%;
+  }
+  #imgbr{
+    width:21rem;
   }
 }
 
@@ -274,13 +325,24 @@
 #brsb{
   width:188%;
 }
+/* #titles{
+  display:hidden;
+} */
+
+.container{
+  width:100vw;
+  height:100vh;
+  display:grid;
+  align-items: center;
+}
 .top-row{
   margin-top:3rem;
   margin-bottom:auto;
 }
 .thmbn{
-  margin-left:0;
+  float:left;
   width:30%;
+  height:200px;
   vertical-align: center;
   background-color:#cccccc;
 
@@ -288,13 +350,14 @@
 }
 .rowrslt{
   z-index:100;
-  margin:50px;
+  margin:50px 0px 50px 0px;
   display:flex;
   min-height: 12rem;
+
+
   color: white;
 }
 .title{
-  margin-left:0;
   padding:1em;
   width:33%;
   display:flex;
@@ -303,9 +366,9 @@
   align-items:center;
   height: 100%;
   font-size:1.2em;
+
   color: black;
 }
-
 /*and then for the viewerpage*/
 .search-bar{
   width:113%
