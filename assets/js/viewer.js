@@ -123,8 +123,8 @@ var searchquery = null;
 changerslt = function(){
     var currentwindow =window.location.pathname;
     console.log(currentwindow);
-    if(currentwindow!='/C:/Users/socce/Sites/critical-web-design/dig245-final/browse-page.html'){
-      window.location.assign('browse-page.html');
+    if(currentwindow!='/C:/Users/socce/Sites/critical-web-design/dig245-final/index.html'){
+      window.location.assign('index.html');
       console.log('True!');
     }
 
