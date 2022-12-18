@@ -45,9 +45,16 @@
   margin:50px 0px 50px 0px;
   display:flex;
   min-height: 12rem;
-
+  border-radius: 25px;
+  border: 0px solid #b2b7c2;
+        font-size: 22px;
+        -webkit-transition: box-shadow linear 1s;
+        transition: box-shadow linear 1s;
 
   color: white;
+}
+.rowrslt:hover{
+  box-shadow: 0 0 20px #143b91;
 }
 .title{
   padding:1em;
@@ -138,7 +145,7 @@
  }
 
  .search-bar{
-   width:113%
+   width:100%
  }
 
   #top-row{
@@ -274,8 +281,11 @@
 }
 
 @media(min-width:768px){
+  #viewerlogo{
+    margin: 10px 10px 10px -10px;
+  }
   #adviewer{
-    width:100%;
+    width:120%;
     height:485px;
   }
   #skip-button{
@@ -377,11 +387,12 @@
 }
 #viewerlogo{
   width:10rem;
+  margin: 10px 0px 10px 0px;
 }
 #adviewer{
   width: 113%;
   height: 447px;
-  margin-top: 2%;
+  margin-top: -9%;
 }
 #skip-button{
   border-style: solid;
@@ -405,6 +416,18 @@
  }
 
  }
+
+
+/* styles.css | https://douglasdeutsch.github.io/dig245-final/assets/css/styles.css */
+
+@media (min-width: 1200px) {
+  #adviewer {
+    /* margin-top: 2%; */
+    margin-top: -9%;
+  }
+}
+
+
 
  .gradient-custom { /* fallback for old browsers */ background: #4facfe; /* Chrome 10-25,
 Safari 5.1-6 */ background: -webkit-linear-gradient(to bottom right, rgba(79, 172, 254,

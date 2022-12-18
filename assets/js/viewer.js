@@ -40,7 +40,17 @@ const pics = [
 	'url("https://thumbs.gfycat.com/SnivelingTemptingBaldeagle-max-1mb.gif")',
 	'url("https://thumbs.gfycat.com/CluelessGenuineClownanemonefish-max-1mb.gif")',
 	'url("https://c.tenor.com/R0rsThA3xIcAAAAM/foodbeard-alright.gif")',
-	'url("https://thumbs.gfycat.com/SingleHonestAssassinbug-max-1mb.gif")'
+	'url("https://thumbs.gfycat.com/SingleHonestAssassinbug-max-1mb.gif")',
+  'url("https://thumbs.gfycat.com/AcrobaticCoarseBullfrog-size_restricted.gif")',
+  'url("https://i.gifer.com/T9LR.gif")',
+  'url("https://j.gifs.com/L8B67X.gif")',
+  'url("http://25.media.tumblr.com/b2c437fe49e3bb48717c6b0d04f39092/tumblr_mkcfz7B4zJ1s5hedko1_400.gif")',
+  'url("https://media2.giphy.com/media/VeSvZhPrqgZxx2KpOA/giphy.gif")',
+  'url("https://thumbs.gfycat.com/BiodegradableEsteemedBobcat-size_restricted.gif")',
+  'url("https://thumbs.gfycat.com/SnivelingJoyousHedgehog-size_restricted.gif")',
+  'url("https://64.media.tumblr.com/85d2e0d2ff0781fc1e14a03295df5d50/156453f855db03bc-15/s400x600/282e48a437787c1ed222573d8e93c8b28c411c04.gifv")',
+  'url("https://i.gifer.com/69vW.gif")',
+  'url("https://media-exp1.licdn.com/dms/image/C5612AQEOEDwHZhDr3w/article-cover_image-shrink_600_2000/0/1638727510746?e=2147483647&v=beta&t=2HjCI195ZrKd3uuHyMZNXsIzbFsy-T0Gvtm6iEzUKyg")'
 ];
 
 function showImage() {
@@ -152,7 +162,7 @@ $(function() {
 		let searchquery = $("#searchy").val();
 		setCookie('searchquery', searchquery, 7);
 
-		
+
 		titleArr.unshift(searchquery);
 		console.log(titleArr);
 		str = "";
