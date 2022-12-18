@@ -1,36 +1,342 @@
 
 /* css */
 
+/*browse page*/
 
-.thumbnail{
-  width: 391px;
-  height:222px;
-  overflow: hidden;
-  background-color: #D9D9D9;
+
+#brlogo{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 10rem;
+  width:100%;
+  padding-left:33%;
+}
+#imgbr{
+  width:21rem;
+}
+#brsb{
+  width:188%;
+}
+/* #titles{
+  display:hidden;
+} */
+
+.container{
+  width:100vw;
+  height:100vh;
+  display:grid;
+  align-items: center;
+}
+.top-row{
+  margin-top:3rem;
+  margin-bottom:auto;
+}
+.thmbn{
+  float:left;
+  width:30%;
+  height:200px;
+  vertical-align: center;
+  background-color:#cccccc;
+
+  border-radius:25px;
+}
+.rowrslt{
+  z-index:100;
+  margin:50px 0px 50px 0px;
+  display:flex;
+  min-height: 12rem;
+
+
+  color: white;
+}
+.title{
+  padding:1em;
+  width:33%;
+  display:flex;
+  float:right;
+  margin:0px;
+  align-items:center;
+  height: 100%;
+  font-size:1.2em;
+
+  color: black;
 }
 
+/*background image for each div*/
+#thmbn0{
+  background-image:url("../img/loading-25.gif");
+  background-size: 35% !important;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn1{
+  background-image:  url("https://i.ytimg.com/vi/tE-9YPxCBLo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCrQtO0TnR6tUwbDO7xdDjE9SnmBA")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn2{
+  background-image:  url("https://i.ytimg.com/vi/zyKzofwUPbA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBAPv14YYW1ggM53cZa6sp4CtZE1A")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn3{
+  background-image:   url("https://i.ytimg.com/vi/BDg9dH8OEWQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2I1zJS6-uDbRva-gxaa2ofXu9PQ")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn4{
+  background-image:  url("https://i.ytimg.com/vi/C4dBuPJ9p7A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBv-YhLa6q-vXuD2W-_im0aa9KFUQ")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn5{
+  background-image:  url("https://i.ytimg.com/vi/ZHB-KlPBwzA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzzaLNjGz4zkGXi99iAQDtbv6MdQ")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn6{
+  background-image:  url("https://i.ytimg.com/vi/S6yBK5LcO68/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAi4G00niAm26DettSZYjaKLgVjbg")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn7{
+  background-image:  url("https://i.ytimg.com/vi/kb5iwtdSKYI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlsIjcr2Q7KR1C85Jr4m5i_fB7zA")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn8{
+  background-image:  url("https://i.ytimg.com/vi/fqq9TSkSe2U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBp-gwd1BC0c01Krrzjls98YZtPGQ")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+#thmbn9{
+  background-image:  url("https://i.ytimg.com/vi/7LptYD-QPqU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBB7Q2XLEkMloftflEQKT8UNJ5Gmw")
+;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+
+
+
+
+
+
+
+ /**viewr.html**/
+
+ .row{
+   display: flex;
+ }
+
+ .search-bar{
+   width:113%
+ }
+
+  #top-row{
+    min-height: 5rem;
+    display: flex;
+  align-items: center;
+  }
+  #viewerlogo{
+    width:10rem;
+    margin:10px 0px 10px 0px;
+  }
+  .child{
+    height:5px;
+  }
+
+
+  #video-row{
+    display:flex;
+    align-items: center;
+  }
+
+  #adviewer{
+
+    width: 113%;
+    height: 447px;
+    margin-top: 2%;
+
+    position: absolute;
+
+
+    align-items: flex-end;
+    position: relative;
+    display: flex;
+
+
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+
+  #skip-button{
+    border-style: solid;
+    border-color: white;
+    border-width:0;
+    position: absolute;
+    width: 20%;
+    height: 9%;
+    background-color: #302828;
+
+
+    font-style: Roboto;
+    font-weight: 600;
+    font-size: 1.5em;
+    color:#ffffff;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin: 2%;
+    z-index:1;
+   }
+
+   #skip-button:hover{
+     border-width: 2px;
+     border-color: #ffffff;
+   }
+   .p{
+     margin-top:auto;
+     margin-bottom:auto;
+   }
+   .button{
+     border: none;
+   }
+
+   #countdown{
+     display: inline-block;
+   }
+   #countcontain{
+     position: relative;
+     float: right;
+     width: 20%;
+     height: 1.1em;
+     color: #ffffff;
+
+     z-index:101;
+     font-style: Roboto;
+     font-size: 1.1em;
+     bottom: 0;
+     left: 0;
+     margin: 3.2%;
+   }
+
+
+
+@media (min-width: 0px){
+  #adviewer {
+  width: 100%;
+  height: 244px;
+}
+.searchbar{
+  width:100%;
+}
+#skip-button{
+  width:27%;
+  height:12%;
+  font-size:1.07rem;
+}
+}
+
+@media(min-width:768px){
+  #adviewer{
+    width:100%;
+    height:485px;
+  }
+  #skip-button{
+    font-size:2.1rem;
+  }
+}
+
+ /*large devices*/
+ @media (min-width: 1200px) {
+/*First for results page*/
+#brlogo{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 10rem;
+  width:100%;
+  padding-left:33%;
+}
+#imgbr{
+  width:21rem;
+}
+#brsb{
+  width:188%;
+}
+.top-row{
+  margin-top:3rem;
+  margin-bottom:auto;
+}
+.thmbn{
+  margin-left:0;
+  width:30%;
+  vertical-align: center;
+  background-color:#cccccc;
+
+  border-radius:25px;
+}
+.rowrslt{
+  z-index:100;
+  margin:50px;
+  display:flex;
+  min-height: 12rem;
+  color: white;
+}
 .title{
-  width: 391px;
-  height:222px;
-  background-color: orange;
+  margin-left:0;
+  padding:1em;
+  width:33%;
+  display:flex;
+  float:right;
+  margin:0px;
+  align-items:center;
+  height: 100%;
+  font-size:1.2em;
+  color: black;
+}
+
+/*and then for the viewerpage*/
+.search-bar{
+  width:113%
+}
+#viewerlogo{
+  width:10rem;
 }
 #adviewer{
-  margin-top:10vh;
-  width: 838px;
+  width: 113%;
   height: 447px;
-  background-color: #D9D9D9;
-  position:relative;
-  z-index:-1;
+  margin-top: 2%;
 }
-
 #skip-button{
+  border-style: solid;
+  border-color: white;
+  border-width:0;
   position: absolute;
-  width: 193px;
-  height: 59px;
-  background-color: #938F8F;
-  margin-left: 631px;
-  margin-top: 378px;
-  z-index:100;
+  width: 20%;
+  height: 9%;
+  background-color: #302828;
+
+
   font-style: Roboto;
-  font-size: 30px;
+  font-weight: 600;
+  font-size: 1.5em;
+  color:#ffffff;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  margin: 2%;
+  z-index:1;
+ }
+
  }

@@ -1,0 +1,28 @@
+{
+  "name": "dig245-final",
+  "version": "1.0.0",
+  "description": "Design and program a web application as a creative response to content from the course.",
+  "main": "not-watch.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Douglasdeutsch/dig245-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Douglasdeutsch/dig245-final/issues"
+  },
+  "homepage": "https://github.com/Douglasdeutsch/dig245-final#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
