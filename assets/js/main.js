@@ -38,16 +38,7 @@ document.addEventListener("load",function(){
 var searchinput = document.getElementById("#searchy");
 var searchquery = null;
 
-changerslt = function(){
-    var currentwindow =window.location.pathname;
-    console.log(currentwindow);
-    console.log()
-    if(currentwindow!='https://douglasdeutsch.github.io/dig245-final/index.html'){
-      window.location.assign('index.html');
-      console.log('True!');
-    }
 
-}
 
 const titleArr = ['holder shift tile','The American City CONTROLLED by Canada',
 'People Who Somehow Survived Freak Accidents',
@@ -84,7 +75,7 @@ $(function(){
       </div>`
     }
     document.getElementById('titles').innerHTML = str;
-    changerslt();
+
 
 })
 
@@ -112,7 +103,7 @@ $("#searchy").keypress(function(event){
       </div>`
     }
     document.getElementById('titles').innerHTML = str;
-    changerslt();
+    
     }
 
 });
