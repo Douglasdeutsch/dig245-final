@@ -24,8 +24,27 @@ window.addEventListener("message", function(event) {
   console.log(event.data);
 });
 
-document.addEventListener("load",function(){
-  console.log(searchquery);
+$(window).on("load",function(){
+  var cookie=getCookie('searchquery');
+  console.log(cookie);
+  let searchquery=cookie;
+  titleArr.unshift(searchquery);
+  console.log(titleArr);
+  str="";
+  for (var i = 0; i<10; i++){
+    str += `<div class="rowrslt row" class="parent" class="d-flex align-items-center" id="results${i}" role='button'>
+    <div class="col-lg-1"></div>
+    <div class="thmbn col-lg-2" id="thmbn${i}" >
+    </div>
+    <div class="col-lg-4 title" id="title${i}">
+    ${titleArr[i]}</div>
+    <div class="col-lg-5"></div>
+    </div>`
+  }
+  document.getElementById('titles').innerHTML = str;
+
+
+
 })
 
 
@@ -55,11 +74,11 @@ const titleArr = ['holder shift tile','The American City CONTROLLED by Canada',
 $(function(){
   $("#search-addon").click(function(){
     event.preventDefault();
-    setCookie('searchquery','',-1);
+
     titleArr.shift();
     let searchquery = $("#searchy").val();
     setCookie('searchquery',searchquery,7);
-    searchquery = getCookie('searchquery');
+
     console.log(searchquery);
     titleArr.unshift(searchquery);
     console.log(titleArr);
@@ -83,11 +102,11 @@ $(function(){
 $("#searchy").keypress(function(event){
   if(event.keyCode=="13"){
     event.preventDefault();
-    setCookie('searchquery','',-1);
+
     titleArr.shift();
     let searchquery = $("#searchy").val();
     setCookie('searchquery',searchquery,7);
-    searchquery = getCookie('searchquery');
+
     console.log(searchquery);
     titleArr.unshift(searchquery);
     console.log(titleArr);
@@ -103,7 +122,7 @@ $("#searchy").keypress(function(event){
       </div>`
     }
     document.getElementById('titles').innerHTML = str;
-    
+
     }
 
 });
