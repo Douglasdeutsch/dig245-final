@@ -233,7 +233,7 @@
 
 
 
-@media (min-width: 0px){
+@media (min-width: 0px) and (max-width:767px){
   #adviewer {
   width: 100%;
   height: 244px;
@@ -279,9 +279,11 @@
     height:485px;
   }
   #skip-button{
-    font-size:2.1rem;
+    font-size:1.6rem;
   }
-
+  .search-bar{
+    width:100%
+  }
   /*resultspage*/
   #brsb{
     width:100%;
@@ -403,3 +405,8 @@
  }
 
  }
+
+ .gradient-custom { /* fallback for old browsers */ background: #4facfe; /* Chrome 10-25,
+Safari 5.1-6 */ background: -webkit-linear-gradient(to bottom right, rgba(79, 172, 254,
+rgba(137, 152, 120,1)Safari 7+ */ background: linear-gradient(to bottom right, rgba(79, 172, 254, 1), rgba(0,
+242, 254, 1)) }

@@ -19,15 +19,25 @@ function getCookie(name) {
   return null;
 }
 
+function deleteCookie(name) {
+  document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
 window.addEventListener("message", function(event) {
   if (event.origin !== "/viewer.html") return;
   console.log(event.data);
 });
 
-$(window).on("load",function(){
-  var cookie=getCookie('searchquery');
+var cookie=getCookie('searchquery');
+
+function loadrslt(){
+  if(cookie == null){
+    return;
+  }else{
   console.log(cookie);
+  titleArr.shift();
   let searchquery=cookie;
+
   titleArr.unshift(searchquery);
   console.log(titleArr);
   str="";
@@ -42,9 +52,14 @@ $(window).on("load",function(){
     </div>`
   }
   document.getElementById('titles').innerHTML = str;
+  deleteCookie('searchquery');
+}
+}
 
-
-
+$(window).on("load",function(){
+  console.log(typeof cookie);
+  console.log(cookie);
+  loadrslt();
 })
 
 
@@ -77,7 +92,7 @@ $(function(){
 
     titleArr.shift();
     let searchquery = $("#searchy").val();
-    setCookie('searchquery',searchquery,7);
+
 
     console.log(searchquery);
     titleArr.unshift(searchquery);
@@ -105,7 +120,7 @@ $("#searchy").keypress(function(event){
 
     titleArr.shift();
     let searchquery = $("#searchy").val();
-    setCookie('searchquery',searchquery,7);
+
 
     console.log(searchquery);
     titleArr.unshift(searchquery);
